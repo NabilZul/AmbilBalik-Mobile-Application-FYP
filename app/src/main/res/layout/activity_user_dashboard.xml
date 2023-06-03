@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserDashboard"
+    android:background="#F3F3F3"
+    android:orientation="vertical"
+    >
+
+    <com.smarteist.autoimageslider.SliderView
+        android:id="@+id/imageSlider"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:sliderAnimationDuration="600"
+        app:sliderAutoCycleDirection="back_and_forth"
+        app:sliderAutoCycleEnabled="true"
+        app:sliderIndicatorAnimationDuration="600"
+        app:sliderIndicatorGravity="center_horizontal|bottom"
+        app:sliderIndicatorMargin="15dp"
+        app:sliderIndicatorOrientation="horizontal"
+        app:sliderIndicatorPadding="3dp"
+        app:sliderIndicatorRadius="2dp"
+        app:sliderIndicatorSelectedColor="#0D4051"
+        app:sliderIndicatorUnselectedColor="#468093"
+        app:sliderScrollTimeInSec="2"
+        app:sliderStartAutoCycle="true"></com.smarteist.autoimageslider.SliderView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="My Activity"
+                android:layout_marginBottom="30dp"
+                android:textColor="#0D4051"
+                android:layout_gravity="center"
+                android:textSize="20dp"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <TableRow>
+
+                        <LinearLayout
+                            android:layout_width="170dp"
+                            android:layout_height="170dp"
+                            android:background="#468093"
+                            android:onClick="toMyLostItem"
+                            android:layout_margin="3dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:paddingTop="40dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:textStyle="bold"
+                                    android:textColor="#0D4051"
+                                    android:text="My Lost Item" />
+
+                                <ImageView
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:src="@drawable/ic_losticon"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_gravity="center">
+                                </ImageView>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="170dp"
+                            android:layout_height="170dp"
+                            android:background="#468093"
+                            android:onClick="toMyFoundItem"
+                            android:layout_margin="3dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:paddingTop="40dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:textStyle="bold"
+                                    android:textColor="#0D4051"
+                                    android:text="My Found Item" />
+
+                                <ImageView
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:src="@drawable/ic_foundicon"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_gravity="center">
+                                </ImageView>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </TableRow>
+
+                </TableLayout>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <TableRow>
+
+                        <LinearLayout
+                            android:layout_width="340dp"
+                            android:layout_height="85dp"
+                            android:background="#468093"
+                            android:layout_margin="6dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:paddingTop="10dp"
+                                android:onClick="toMarketplace">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:textStyle="bold"
+                                    android:textColor="#0D4051"
+                                    android:text="Marketplace" />
+
+                                <ImageView
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:src="@drawable/ic_marketplaceicon"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_gravity="center">
+                                </ImageView>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </TableRow>
+                </TableLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/bottom_navigator"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#468093"
+            android:onClick="goAddEvent"
+            android:src="@drawable/ic_baseline_add_24" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:itemBackground="@color/black"
+            app:itemIconTint="@drawable/selector"
+            app:itemTextColor="@drawable/selector"
+            app:menu="@menu/menu"
+
+            />
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

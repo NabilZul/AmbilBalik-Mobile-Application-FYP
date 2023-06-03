@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "306971705289",
+    "project_id": "ambilbalik-84f9c",
+    "storage_bucket": "ambilbalik-84f9c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:306971705289:android:c96def712c24d2fb18f218",
+        "android_client_info": {
+          "package_name": "com.example.ambilbalik"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "306971705289-q5kj7d11u24uonuksbt9khh6q29g4iir.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAO14xP9hLx5Xn_LwOUNhaH-a66DdCrmtY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "306971705289-q5kj7d11u24uonuksbt9khh6q29g4iir.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

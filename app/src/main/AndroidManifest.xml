@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ambilbalik">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_logoapp_foreground"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_logoapp_foreground"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AmbilBalik">
+        <activity
+            android:name=".ViewMyMarketItem"
+            android:exported="false" />
+        <activity
+            android:name=".MyMarketList"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AdminManageMarket"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AdminMarketList"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AdminManageUser"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AdminUserList"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AdminManageFound"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AdminFoundList"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AdminManageLost"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AdminLostList"
+            android:exported="false" />
+        <activity
+            android:name=".ForgotPassword"
+            android:exported="false" />
+        <activity
+            android:name=".ViewMarketItem"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AdminDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".Marketplace"
+            android:exported="false" />
+        <activity
+            android:name=".EditNotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditNotification"
+            android:exported="false" />
+        <activity
+            android:name=".ViewMyFoundItem"
+            android:exported="false" />
+        <activity
+            android:name=".MyFoundItem"
+            android:exported="false" />
+        <activity
+            android:name=".ViewMyLostItem"
+            android:exported="false" />
+        <activity
+            android:name=".MyLostItem"
+            android:exported="false" />
+        <activity
+            android:name=".DisplayFoundItemDetail"
+            android:exported="false" />
+        <activity
+            android:name=".DisplayLostItemDetail"
+            android:exported="false" />
+        <activity
+            android:name=".FoundFragment"
+            android:exported="false" />
+        <activity
+            android:name=".LostFragment"
+            android:exported="false" />
+        <activity
+            android:name=".InputLocation"
+            android:exported="false" />
+        <activity
+            android:name=".AddEvent"
+            android:exported="false" />
+        <activity
+            android:name=".UserSearch"
+            android:exported="false" />
+        <activity
+            android:name=".UserProfile"
+            android:exported="false" />
+        <activity
+            android:name=".UserDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".Register"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyANsY9vcIz0C8b2MZ2vjN-lZdfaRFQEAUw" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.android.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3"
+    android:orientation="vertical"
+    tools:context=".Admin.AdminDashboard">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#0D4051"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADMIN DASHBOARD"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:paddingTop="25dp"
+            >
+        </TextView>
+
+    </LinearLayout>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:background="#F3F3F3"
+       android:gravity="center"
+       >
+
+    <Button
+        android:layout_margin="15dp"
+        android:layout_width="150dp"
+        android:backgroundTint="#468093"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="User List"
+        android:onClick="userList"
+        >
+    </Button>
+
+       <Button
+           android:layout_margin="15dp"
+           android:layout_width="150dp"
+           android:backgroundTint="#468093"
+           android:textColor="@color/white"
+           android:layout_height="wrap_content"
+           android:onClick="lostList"
+           android:text="Lost List">
+       </Button>
+
+       <Button
+           android:layout_margin="15dp"
+           android:layout_width="150dp"
+           android:backgroundTint="#468093"
+           android:textColor="@color/white"
+           android:layout_height="wrap_content"
+           android:text="Found List"
+           android:onClick="foundList">
+       </Button>
+
+       <Button
+           android:layout_margin="15dp"
+           android:layout_width="150dp"
+           android:backgroundTint="#468093"
+           android:textColor="@color/white"
+           android:layout_height="wrap_content"
+           android:text="Marketplace"
+           android:onClick="marketPlaceList"
+           >
+       </Button>
+
+       <Button
+           android:layout_margin="15dp"
+           android:layout_width="150dp"
+           android:backgroundTint="#468093"
+           android:textColor="@color/white"
+           android:layout_height="wrap_content"
+           android:text="Logout"
+           android:onClick="logout">
+       </Button>
+
+   </LinearLayout>
+</LinearLayout>
